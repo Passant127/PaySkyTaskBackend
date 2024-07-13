@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaySkyTask.API", "PaySkyTask\PaySkyTask.API.csproj", "{B56A8894-E0E8-41BF-985A-738B7AB76E68}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PasySkyTask.Core", "Task.Core\PasySkyTask.Core.csproj", "{F78AD441-3AE1-4EE5-B4B2-BABC34D68CE5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PasySkyTask.Domain", "Task.Domain\PasySkyTask.Domain.csproj", "{C3281C9A-7DB2-4C30-BC84-F4530C94D370}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F78AD441-3AE1-4EE5-B4B2-BABC34D68CE5} = {F78AD441-3AE1-4EE5-B4B2-BABC34D68CE5}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PasySkyTask.Infrastructure", "Task.Infrastructure\PasySkyTask.Infrastructure.csproj", "{406843CF-D235-4D30-AB4A-B1326DDFD8B4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PasySkyTask.Application", "Task.Application\PasySkyTask.Application.csproj", "{1F9E116A-4DBF-49CA-9E27-C62D638BE248}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B56A8894-E0E8-41BF-985A-738B7AB76E68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B56A8894-E0E8-41BF-985A-738B7AB76E68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B56A8894-E0E8-41BF-985A-738B7AB76E68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B56A8894-E0E8-41BF-985A-738B7AB76E68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F78AD441-3AE1-4EE5-B4B2-BABC34D68CE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F78AD441-3AE1-4EE5-B4B2-BABC34D68CE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F78AD441-3AE1-4EE5-B4B2-BABC34D68CE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F78AD441-3AE1-4EE5-B4B2-BABC34D68CE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3281C9A-7DB2-4C30-BC84-F4530C94D370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3281C9A-7DB2-4C30-BC84-F4530C94D370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3281C9A-7DB2-4C30-BC84-F4530C94D370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3281C9A-7DB2-4C30-BC84-F4530C94D370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{406843CF-D235-4D30-AB4A-B1326DDFD8B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{406843CF-D235-4D30-AB4A-B1326DDFD8B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{406843CF-D235-4D30-AB4A-B1326DDFD8B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{406843CF-D235-4D30-AB4A-B1326DDFD8B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F9E116A-4DBF-49CA-9E27-C62D638BE248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F9E116A-4DBF-49CA-9E27-C62D638BE248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F9E116A-4DBF-49CA-9E27-C62D638BE248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F9E116A-4DBF-49CA-9E27-C62D638BE248}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C381B58-41B5-4855-8CF1-7436FFD133DF}
+	EndGlobalSection
+EndGlobal
