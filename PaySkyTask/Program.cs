@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using PasySkyTask.API.ExtensionMethods;
+using PasySkyTask.Application.Contracts;
+using PasySkyTask.Application.Services;
 using PasySkyTask.Domain.IRepositories;
 using PasySkyTask.Infrastructure.Repositories;
 using PaySkyTask.API.ExceptionHandlers;
@@ -126,7 +128,22 @@ namespace PaySkyTask
                
                 AppPath = "/",
                 DashboardTitle = "Hangfire"
+                
+
+
             });
+            using (var scope = app.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                var recurringJobManager = services.GetRequiredService<IRecurringJobManager>();
+                var yourService = services.GetRequiredService<IVacancyService>();
+
+                recurringJobManager.AddOrUpdate(
+                    "archive-expired-vacancies",
+                    () => yourService.ArchiveExpiredVacanciesAsync(),
+                    Cron.Daily); // Runs the job daily, you can customize the schedule as needed
+            }
+
 
             app.MapControllers();
 
