@@ -1,0 +1,1065 @@
+{
+	"info": {
+		"_postman_id": "1cd6f2d5-adb9-45c9-b7e5-d2ddc3405763",
+		"name": "PaySkyTask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19769718"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userName\": \"alimohamed55\",\r\n  \"password\": \"P@ssw0rd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5074/api/Auth/Login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5074",
+							"path": [
+								"api",
+								"Auth",
+								"Login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "LoginApplicant",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"userName\": \"alimohamed55\",\r\n  \"password\": \"P@ssw0rd\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5074/api/Auth/Login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5074",
+									"path": [
+										"api",
+										"Auth",
+										"Login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 13 Jul 2024 16:50:19 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"value\": {\n        \"id\": \"fc5671d9-b6a1-49f9-a322-9ef33b93c41b\",\n        \"userName\": \"alimohamed55\",\n        \"fullName\": null,\n        \"roles\": [\n            1\n        ],\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImZjNTY3MWQ5LWI2YTEtNDlmOS1hMzIyLTllZjMzYjkzYzQxYiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhbGkgbW9oYW1lZCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6ImFsaW1vaGFtZWRAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQXBwbGljYW50IiwiZXhwIjoxNzIwOTc1ODIwLCJpc3MiOiJQYXlTa3kiLCJhdWQiOiJQbGF0Zm9ybVVzZXJzIn0.z3D52RjDiWbp1MJKhnI6uGrRY79lRf_vdEIdY4BU2qM\"\n    },\n    \"status\": 200,\n    \"isSuccess\": true,\n    \"successMessage\": \"\",\n    \"correlationId\": \"\",\n    \"errors\": [],\n    \"validationErrors\": []\n}"
+						},
+						{
+							"name": "LoginEmployer",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"userName\": \"alimohamed\",\r\n  \"password\": \"0167519Kh!\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5074/api/Auth/Login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5074",
+									"path": [
+										"api",
+										"Auth",
+										"Login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 13 Jul 2024 17:06:56 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"value\": {\n        \"id\": \"a29a94a0-09f6-4501-9aa0-f77cc8512a4b\",\n        \"userName\": \"alimohamed\",\n        \"fullName\": null,\n        \"roles\": [\n            0\n        ],\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImEyOWE5NGEwLTA5ZjYtNDUwMS05YWEwLWY3N2NjODUxMmE0YiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhbGkgbW9oYW1lZCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6ImFsaW1vaGFtZWRAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiRW1wbG95ZXIiLCJleHAiOjE3MjA5NzY4MTcsImlzcyI6IlBheVNreSIsImF1ZCI6IlBsYXRmb3JtVXNlcnMifQ.sjuklSd99zC_yy1o8auQ6RbaR9n2NcW8Y1o-rskIC3E\"\n    },\n    \"status\": 200,\n    \"isSuccess\": true,\n    \"successMessage\": \"\",\n    \"correlationId\": \"\",\n    \"errors\": [],\n    \"validationErrors\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "CreateRoles",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  \"string\"\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/Auth/CreateRoles",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"Auth",
+								"CreateRoles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CreateRoles",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5074/api/Auth/CreateInitialRoles",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5074",
+									"path": [
+										"api",
+										"Auth",
+										"CreateInitialRoles"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 13 Jul 2024 17:01:33 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"value\": null,\n    \"status\": 200,\n    \"isSuccess\": true,\n    \"successMessage\": \"Create roles successfully\",\n    \"correlationId\": \"\",\n    \"errors\": [],\n    \"validationErrors\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "EmployerRegister",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"omar@gmail.com\",\r\n  \"firstName\": \"omar\",\r\n  \"lastName\": \"ahmed\",\r\n  \"phoneNumber\": \"01140812059\",\r\n  \"userName\": \"omarahmed\",\r\n  \"password\": \"P@ssw0rd\",\r\n  \"dateOfBirth\": \"2001-09-26\",\r\n  \"gender\": \"male\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5074/api/Auth/RegisterEmployer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5074",
+							"path": [
+								"api",
+								"Auth",
+								"RegisterEmployer"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Employer",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"omar@gmail.com\",\r\n  \"firstName\": \"omar\",\r\n  \"lastName\": \"ahmed\",\r\n  \"phoneNumber\": \"01140812059\",\r\n  \"userName\": \"omarahmed\",\r\n  \"password\": \"P@ssw0rd\",\r\n  \"dateOfBirth\": \"2001-09-26\",\r\n  \"gender\": \"male\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5074/api/Auth/RegisterEmployer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5074",
+									"path": [
+										"api",
+										"Auth",
+										"RegisterEmployer"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 13 Jul 2024 16:57:26 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"value\": null,\n    \"status\": 200,\n    \"isSuccess\": true,\n    \"successMessage\": \"Successfully created a new user omarahmed with role Employer\",\n    \"correlationId\": \"\",\n    \"errors\": [],\n    \"validationErrors\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "ApplicantRegister",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"omar@gmail.com\",\r\n  \"firstName\": \"omar\",\r\n  \"lastName\": \"ahmed\",\r\n  \"phoneNumber\": \"01140812059\",\r\n  \"userName\": \"omar123\",\r\n  \"password\": \"P@ssw0rd\",\r\n  \"dateOfBirth\": \"2001-09-26\",\r\n  \"gender\": \"male\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5074/api/Auth/RegisterApplicant",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5074",
+							"path": [
+								"api",
+								"Auth",
+								"RegisterApplicant"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Applicant",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"omar@gmail.com\",\r\n  \"firstName\": \"omar\",\r\n  \"lastName\": \"ahmed\",\r\n  \"phoneNumber\": \"01140812059\",\r\n  \"userName\": \"omar123\",\r\n  \"password\": \"P@ssw0rd\",\r\n  \"dateOfBirth\": \"2001-09-26\",\r\n  \"gender\": \"male\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5074/api/Auth/RegisterApplicant",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5074",
+									"path": [
+										"api",
+										"Auth",
+										"RegisterApplicant"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 13 Jul 2024 16:59:38 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"value\": null,\n    \"status\": 200,\n    \"isSuccess\": true,\n    \"successMessage\": \"Successfully created a new user omar123 with role Applicant\",\n    \"correlationId\": \"\",\n    \"errors\": [],\n    \"validationErrors\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Vacancy",
+			"item": [
+				{
+					"name": "AddVacancy",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "AddVacancy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"title\": \"string\",\r\n      \"description\": \"string\",\r\n      \"expiryDate\": \"2024-07-13T17:57:46.916Z\",\r\n      \"maxApplications\": 0,\r\n      \"currentApplications\": 0,\r\n      \"status\": 0,\r\n      \"employerId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\"\r\n   \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5074/api/Vacancy",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5074",
+									"path": [
+										"api",
+										"Vacancy"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 13 Jul 2024 17:59:35 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"value\": {\n        \"id\": \"6d90b54d-63ae-430c-6d1a-08dca3658ae9\",\n        \"title\": \"string\",\n        \"description\": \"string\",\n        \"expiryDate\": \"2024-07-13T17:57:46.916Z\",\n        \"maxApplications\": 0,\n        \"currentApplications\": 0,\n        \"status\": 0,\n        \"employerId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\"\n    },\n    \"status\": 200,\n    \"isSuccess\": true,\n    \"successMessage\": \"\",\n    \"correlationId\": \"\",\n    \"errors\": [],\n    \"validationErrors\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "UpdateVacancy",
+					"request": {
+						"method": "PUT",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "UpdateVacancy",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"title\": \"string\",\r\n      \"description\": \"string\",\r\n      \"expiryDate\": \"2024-07-13T17:57:46.916Z\",\r\n      \"maxApplications\": 0,\r\n      \"currentApplications\": 0,\r\n      \"status\": 0,\r\n      \"employerId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n      \"id\": \"6d90b54d-63ae-430c-6d1a-08dca3658ae9\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5074/api/Vacancy",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5074",
+									"path": [
+										"api",
+										"Vacancy"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 13 Jul 2024 18:00:41 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"value\": {\n        \"id\": \"497150cc-ac62-46b2-6d1b-08dca3658ae9\",\n        \"title\": \"string\",\n        \"description\": \"string\",\n        \"expiryDate\": \"2024-07-13T17:57:46.916Z\",\n        \"maxApplications\": 0,\n        \"currentApplications\": 0,\n        \"status\": 0,\n        \"employerId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\"\n    },\n    \"status\": 200,\n    \"isSuccess\": true,\n    \"successMessage\": \"\",\n    \"correlationId\": \"\",\n    \"errors\": [],\n    \"validationErrors\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "GetVacancyById",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "GetVacancyById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5074/api/Vacancy",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5074",
+									"path": [
+										"api",
+										"Vacancy"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 13 Jul 2024 17:09:29 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"value\": [\n        {\n            \"id\": \"3ba3ea24-0c6d-47ff-0138-08dca31940cd\",\n            \"title\": \"string\",\n            \"description\": \"string\",\n            \"expiryDate\": \"2024-07-13T08:52:53.693\",\n            \"maxApplications\": 1,\n            \"currentApplications\": 0,\n            \"status\": 0,\n            \"employerId\": \"a29a94a0-09f6-4501-9aa0-f77cc8512a4b\"\n        },\n        {\n            \"id\": \"e4bba775-b548-4a2c-5b83-08dca31d9083\",\n            \"title\": \"string\",\n            \"description\": \"string\",\n            \"expiryDate\": \"2024-07-13T09:24:07.141\",\n            \"maxApplications\": 1,\n            \"currentApplications\": 0,\n            \"status\": 0,\n            \"employerId\": \"a29a94a0-09f6-4501-9aa0-f77cc8512a4b\"\n        },\n        {\n            \"id\": \"d518321d-ac08-4b3e-a2a1-08dca34cdf6c\",\n            \"title\": \"string\",\n            \"description\": \"string\",\n            \"expiryDate\": \"2024-07-11T15:02:12.784\",\n            \"maxApplications\": 2,\n            \"currentApplications\": 0,\n            \"status\": 0,\n            \"employerId\": \"a29a94a0-09f6-4501-9aa0-f77cc8512a4b\"\n        },\n        {\n            \"id\": \"6e7f0ef2-9af9-46d2-a2a2-08dca34cdf6c\",\n            \"title\": \"string\",\n            \"description\": \"string\",\n            \"expiryDate\": \"2024-07-11T15:02:12.784\",\n            \"maxApplications\": 2,\n            \"currentApplications\": 0,\n            \"status\": 0,\n            \"employerId\": \"a29a94a0-09f6-4501-9aa0-f77cc8512a4b\"\n        },\n        {\n            \"id\": \"1af3e404-c80f-41af-a2a3-08dca34cdf6c\",\n            \"title\": \"string\",\n            \"description\": \"string\",\n            \"expiryDate\": \"2024-07-11T15:02:12.784\",\n            \"maxApplications\": 2,\n            \"currentApplications\": 0,\n            \"status\": 0,\n            \"employerId\": \"a29a94a0-09f6-4501-9aa0-f77cc8512a4b\"\n        },\n        {\n            \"id\": \"8b749649-0def-48ef-a2a4-08dca34cdf6c\",\n            \"title\": \"string\",\n            \"description\": \"string\",\n            \"expiryDate\": \"2024-07-11T15:02:12.784\",\n            \"maxApplications\": 2,\n            \"currentApplications\": 0,\n            \"status\": 0,\n            \"employerId\": \"a29a94a0-09f6-4501-9aa0-f77cc8512a4b\"\n        }\n    ],\n    \"status\": 200,\n    \"isSuccess\": true,\n    \"successMessage\": \"\",\n    \"correlationId\": \"\",\n    \"errors\": [],\n    \"validationErrors\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "DeleteVacancy",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "DeleteVacancy",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5074/api/Vacancy/3ba3ea24-0c6d-47ff-0138-08dca31940cd",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5074",
+									"path": [
+										"api",
+										"Vacancy",
+										"3ba3ea24-0c6d-47ff-0138-08dca31940cd"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 13 Jul 2024 17:22:20 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"value\": true,\n    \"status\": 200,\n    \"isSuccess\": true,\n    \"successMessage\": \"\",\n    \"correlationId\": \"\",\n    \"errors\": [],\n    \"validationErrors\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "ArchiveVacancy",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "ArchiveVacancy",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5074/api/Vacancy/Archive",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5074",
+									"path": [
+										"api",
+										"Vacancy",
+										"Archive"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 13 Jul 2024 17:46:20 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"value\": false,\n    \"status\": 404,\n    \"isSuccess\": false,\n    \"successMessage\": \"\",\n    \"correlationId\": \"\",\n    \"errors\": [\n        \"No expired vacancies found to archive\"\n    ],\n    \"validationErrors\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "SearchVacancy",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Search",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5074/api/Vacancy/Search/s",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5074",
+									"path": [
+										"api",
+										"Vacancy",
+										"Search",
+										"s"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 13 Jul 2024 17:47:24 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"value\": [\n        {\n            \"id\": \"e4bba775-b548-4a2c-5b83-08dca31d9083\",\n            \"title\": \"string\",\n            \"description\": \"string\",\n            \"expiryDate\": \"2024-07-13T09:24:07.141\",\n            \"maxApplications\": 1,\n            \"currentApplications\": 0,\n            \"status\": 0,\n            \"employerId\": \"a29a94a0-09f6-4501-9aa0-f77cc8512a4b\"\n        },\n        {\n            \"id\": \"d518321d-ac08-4b3e-a2a1-08dca34cdf6c\",\n            \"title\": \"string\",\n            \"description\": \"string\",\n            \"expiryDate\": \"2024-07-11T15:02:12.784\",\n            \"maxApplications\": 2,\n            \"currentApplications\": 0,\n            \"status\": 0,\n            \"employerId\": \"a29a94a0-09f6-4501-9aa0-f77cc8512a4b\"\n        },\n        {\n            \"id\": \"6e7f0ef2-9af9-46d2-a2a2-08dca34cdf6c\",\n            \"title\": \"string\",\n            \"description\": \"string\",\n            \"expiryDate\": \"2024-07-11T15:02:12.784\",\n            \"maxApplications\": 2,\n            \"currentApplications\": 0,\n            \"status\": 0,\n            \"employerId\": \"a29a94a0-09f6-4501-9aa0-f77cc8512a4b\"\n        },\n        {\n            \"id\": \"1af3e404-c80f-41af-a2a3-08dca34cdf6c\",\n            \"title\": \"string\",\n            \"description\": \"string\",\n            \"expiryDate\": \"2024-07-11T15:02:12.784\",\n            \"maxApplications\": 2,\n            \"currentApplications\": 0,\n            \"status\": 0,\n            \"employerId\": \"a29a94a0-09f6-4501-9aa0-f77cc8512a4b\"\n        },\n        {\n            \"id\": \"8b749649-0def-48ef-a2a4-08dca34cdf6c\",\n            \"title\": \"string\",\n            \"description\": \"string\",\n            \"expiryDate\": \"2024-07-11T15:02:12.784\",\n            \"maxApplications\": 2,\n            \"currentApplications\": 0,\n            \"status\": 0,\n            \"employerId\": \"a29a94a0-09f6-4501-9aa0-f77cc8512a4b\"\n        }\n    ],\n    \"status\": 200,\n    \"isSuccess\": true,\n    \"successMessage\": \"\",\n    \"correlationId\": \"\",\n    \"errors\": [],\n    \"validationErrors\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "PostVacancy",
+					"request": {
+						"method": "PUT",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "PostVacancy",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5074/api/Vacancy/PostVacancy/e4bba775-b548-4a2c-5b83-08dca31d9083",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5074",
+									"path": [
+										"api",
+										"Vacancy",
+										"PostVacancy",
+										"e4bba775-b548-4a2c-5b83-08dca31d9083"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 13 Jul 2024 17:55:42 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"value\": true,\n    \"status\": 200,\n    \"isSuccess\": true,\n    \"successMessage\": \"\",\n    \"correlationId\": \"\",\n    \"errors\": [],\n    \"validationErrors\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "DeactiveVacancy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImEyOWE5NGEwLTA5ZjYtNDUwMS05YWEwLWY3N2NjODUxMmE0YiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhbGkgbW9oYW1lZCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6ImFsaW1vaGFtZWRAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiRW1wbG95ZXIiLCJleHAiOjE3MjA5NzY4MTcsImlzcyI6IlBheVNreSIsImF1ZCI6IlBsYXRmb3JtVXNlcnMifQ.sjuklSd99zC_yy1o8auQ6RbaR9n2NcW8Y1o-rskIC3E",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5074/api/Vacancy/DeactivateVacancy/e4bba775-b548-4a2c-5b83-08dca31d9083",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5074",
+							"path": [
+								"api",
+								"Vacancy",
+								"DeactivateVacancy",
+								"e4bba775-b548-4a2c-5b83-08dca31d9083"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "DeactiveVacancy",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5074/api/Vacancy/DeactivateVacancy/e4bba775-b548-4a2c-5b83-08dca31d9083",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5074",
+									"path": [
+										"api",
+										"Vacancy",
+										"DeactivateVacancy",
+										"e4bba775-b548-4a2c-5b83-08dca31d9083"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 13 Jul 2024 17:55:22 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"value\": true,\n    \"status\": 200,\n    \"isSuccess\": true,\n    \"successMessage\": \"\",\n    \"correlationId\": \"\",\n    \"errors\": [],\n    \"validationErrors\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Application",
+			"item": [
+				{
+					"name": "GetApplicationByApplicantId",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Applications",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5074/api/Application?id=86eaf962-03b0-4f5c-97c9-4735ddb4d698",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5074",
+									"path": [
+										"api",
+										"Application"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "86eaf962-03b0-4f5c-97c9-4735ddb4d698"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 13 Jul 2024 17:07:34 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"value\": null,\n    \"status\": 404,\n    \"isSuccess\": false,\n    \"successMessage\": \"\",\n    \"correlationId\": \"\",\n    \"errors\": [\n        \"No applications found.\"\n    ],\n    \"validationErrors\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "ApplyApplication",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImZjNTY3MWQ5LWI2YTEtNDlmOS1hMzIyLTllZjMzYjkzYzQxYiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhbGkgbW9oYW1lZCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6ImFsaW1vaGFtZWRAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQXBwbGljYW50IiwiZXhwIjoxNzIwOTc1ODIwLCJpc3MiOiJQYXlTa3kiLCJhdWQiOiJQbGF0Zm9ybVVzZXJzIn0.z3D52RjDiWbp1MJKhnI6uGrRY79lRf_vdEIdY4BU2qM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"applicantId\": \"fc5671d9-b6a1-49f9-a322-9ef33b93c41b\",\r\n  \"vacancyId\": \"3ba3ea24-0c6d-47ff-0138-08dca31940cd\",\r\n  \"applicationDate\": \"2024-07-13T17:08:36.007Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5074/api/Application",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5074",
+							"path": [
+								"api",
+								"Application"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ApplyApplication",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"applicantId\": \"fc5671d9-b6a1-49f9-a322-9ef33b93c41b\",\r\n  \"vacancyId\": \"3ba3ea24-0c6d-47ff-0138-08dca31940cd\",\r\n  \"applicationDate\": \"2024-07-13T17:08:36.007Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5074/api/Application",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5074",
+									"path": [
+										"api",
+										"Application"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 13 Jul 2024 17:10:58 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"value\": {\n        \"id\": \"00000000-0000-0000-0000-000000000000\",\n        \"status\": 0,\n        \"applicantId\": \"fc5671d9-b6a1-49f9-a322-9ef33b93c41b\",\n        \"vacancyId\": \"3ba3ea24-0c6d-47ff-0138-08dca31940cd\",\n        \"applicationDate\": \"2024-07-13T17:08:36.007Z\"\n    },\n    \"status\": 200,\n    \"isSuccess\": true,\n    \"successMessage\": \"\",\n    \"correlationId\": \"\",\n    \"errors\": [],\n    \"validationErrors\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "GetApplicantByVacancyId",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "GetByVacancyId",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5074/api/Application/3ba3ea24-0c6d-47ff-0138-08dca31940cd/applicants",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5074",
+									"path": [
+										"api",
+										"Application",
+										"3ba3ea24-0c6d-47ff-0138-08dca31940cd",
+										"applicants"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 13 Jul 2024 17:12:47 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"value\": [\n        {\n            \"id\": \"93eb0234-f803-4e57-dd97-08dca32b6f0c\",\n            \"status\": 0,\n            \"name\": \"\",\n            \"applicantId\": \"86eaf962-03b0-4f5c-97c9-4735ddb4d698\",\n            \"vacancyId\": \"3ba3ea24-0c6d-47ff-0138-08dca31940cd\",\n            \"applicationDate\": \"2024-07-13T09:56:54.715\"\n        },\n        {\n            \"id\": \"eac131a7-61cd-4633-fca3-08dca35ec42f\",\n            \"status\": 0,\n            \"name\": \"\",\n            \"applicantId\": \"fc5671d9-b6a1-49f9-a322-9ef33b93c41b\",\n            \"vacancyId\": \"3ba3ea24-0c6d-47ff-0138-08dca31940cd\",\n            \"applicationDate\": \"2024-07-13T17:08:36.007\"\n        }\n    ],\n    \"status\": 200,\n    \"isSuccess\": true,\n    \"successMessage\": \"\",\n    \"correlationId\": \"\",\n    \"errors\": [],\n    \"validationErrors\": []\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
